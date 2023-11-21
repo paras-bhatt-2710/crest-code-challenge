@@ -13,14 +13,12 @@ function PhotoGallery({ images }) {
 
   return (
     <>
-      {/* <div className='container'>
-        <PhotoAlbum photos={images} layout="rows" onClick={({ index }) => setIndex(index)} />
-      </div> */}
+    
       <div className='container'>
         <div className='gallery-wrapper'>
           {
             images.map((item, index) => (
-              <div className='gallery-wrap' onClick={() => setIndex(index)}>
+              <div key={index} className='gallery-wrap' onClick={() => setIndex(index)}>
                 <img src={item.src} alt='' />
               </div>
             ))

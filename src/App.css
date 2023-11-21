@@ -1,4 +1,3 @@
-
 * {
   margin: 0;
   padding: 0;
@@ -71,4 +70,30 @@ body {
 .filter-wrapper ul li button.active {
   background-color: #000;
   color: #fff;
+}
+
+/* Media Queries */
+
+@media only screen and (max-width: 1367px) {
+  .gallery-wrapper {
+    margin: 0;
+  }
+}
+
+@media only screen and (max-width: 1199px) {
+  .gallery-wrap {
+    flex: 0 0 33.33%;
+  }
+}
+
+@media only screen and (max-width: 767px) {
+  .gallery-wrap {
+    flex: 0 0 50%;
+  }
+}
+
+@media only screen and (max-width: 525px) {
+  .gallery-wrap {
+    flex: 0 0 100%;
+  }
 }
